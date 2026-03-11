@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Gym | Transform Your Body</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PRO<span>GYM</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="about.html">Trainers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary d-none-mobile">Join Now</a>
+            <i class="fa-solid fa-bars mobile-toggle"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="heading-xl">Transform Your <span class="text-accent">Body</span>,<br>Transform Your <span
+                    class="text-accent">Life</span></h1>
+            <p>Professional training programs designed to build strength, endurance, and confidence. Step into the arena
+                and unleash your full potential.</p>
+            <div class="hero-btns">
+                <a href="contact.html" class="btn btn-primary">Join Now</a>
+                <a href="programs.html" class="btn btn-outline">View Programs</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Feature Section -->
+    <section class="container features-grid">
+        <div class="feature-card reveal">
+            <i class="fa-solid fa-dumbbell feature-icon"></i>
+            <h3>Modern Equipment</h3>
+            <p>Train with industry-leading machinery and free weights optimized for all fitness levels.</p>
+        </div>
+        <div class="feature-card reveal">
+            <i class="fa-solid fa-user-ninja feature-icon"></i>
+            <h3>Certified Trainers</h3>
+            <p>Our expert coaches are here to guide you with personalized insights and motivation.</p>
+        </div>
+        <div class="feature-card reveal">
+            <i class="fa-solid fa-clipboard-list feature-icon"></i>
+            <h3>Personalized Plans</h3>
+            <p>Custom training splits and nutritional guidance tailored to smash your goals.</p>
+        </div>
+    </section>
+
+    <!-- Programs Preview Section -->
+    <section class="section-padding container">
+        <div class="text-center mb-5 reveal">
+            <h2 class="heading-lg">Elite <span class="text-accent">Programs</span></h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem;">Find the perfect workout regime
+                to shatter your limits.</p>
+        </div>
+
+        <div class="programs-grid reveal">
+            <div class="program-card">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070"
+                    alt="Strength Training" class="program-img">
+                <div class="program-overlay">
+                    <i class="fa-solid fa-weight-hanging"
+                        style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Strength Training</h3>
+                    <p>Build muscle and increase raw power safely.</p>
+                </div>
+            </div>
+            <div class="program-card">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=2070" alt="HIIT"
+                    class="program-img">
+                <div class="program-overlay">
+                    <i class="fa-solid fa-fire"
+                        style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>HIIT Training</h3>
+                    <p>High-intensity intervals for maximum fat burn.</p>
+                </div>
+            </div>
+            <div class="program-card">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069" alt="CrossFit"
+                    class="program-img">
+                <div class="program-overlay">
+                    <i class="fa-solid fa-bolt"
+                        style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>CrossFit Program</h3>
+                    <p>Dynamic, full-body functional movements.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="programs.html" class="btn btn-outline reveal">View All Programs</a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section-padding" style="background: var(--bg-card);">
+        <div class="container about-section reveal">
+            <div class="about-img-box">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070" alt="Gym Interior"
+                    class="about-img">
+                <div class="stats-box">
+                    <h3 style="font-size: 3rem; margin:0;">10+</h3>
+                    <p style="font-weight:bold; letter-spacing:1px; margin:0;">Years Experience</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="heading-lg">Why Choose <span class="text-accent">Us</span>?</h2>
+                <p>We are not just a gym; we are a community of dedicated athletes and beginners all striving for
+                    greatness. Step inside and feel the energy.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> Thousands of trained members</li>
+                    <li><i class="fa-solid fa-circle-check"></i> State-of-the-art equipment</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Open 24/7 for premium members</li>
+                </ul>
+                <a href="about.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Preview Section -->
+    <section class="section-padding container reveal">
+        <div class="text-center mb-5">
+            <h2 class="heading-lg">Meet Our <span class="text-accent">Trainers</span></h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem;">The elite professionals guiding
+                your transformation journey.</p>
+        </div>
+
+        <div class="trainers-grid">
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070" alt="Trainer 1"
+                    class="trainer-img">
+                <div class="trainer-info">
+                    <h3>John <span class="text-accent">Doe</span></h3>
+                    <p class="specialization">Head Coach - Strength</p>
+                    <p class="exp">12 Years Experience</p>
+                </div>
+            </div>
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?q=80&w=1964" alt="Trainer 2"
+                    class="trainer-img">
+                <div class="trainer-info">
+                    <h3>Sarah <span class="text-accent">Connor</span></h3>
+                    <p class="specialization">HIIT & Conditioning</p>
+                    <p class="exp">8 Years Experience</p>
+                </div>
+            </div>
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1974" alt="Trainer 3"
+                    class="trainer-img">
+                <div class="trainer-info">
+                    <h3>Mike <span class="text-accent">Tyson</span></h3>
+                    <p class="specialization">Boxing & Bodybuilding</p>
+                    <p class="exp">15 Years Experience</p>
+                </div>
+            </div>
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2070" alt="Trainer 4"
+                    class="trainer-img">
+                <div class="trainer-info">
+                    <h3>Elena <span class="text-accent">Rose</span></h3>
+                    <p class="specialization">Yoga & Recovery</p>
+                    <p class="exp">10 Years Experience</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="about.html" class="btn btn-outline reveal">View All Trainers</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding testimonials reveal">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="heading-lg">Success <span class="text-accent">Stories</span></h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem;">Real results from real
+                    members. Your transformation starts here.</p>
+            </div>
+
+            <div style="overflow: hidden; padding: 1rem 0;">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-head">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100"
+                                alt="User 1" class="testimonial-img">
+                            <div>
+                                <h4 style="color: white; font-size: 1.2rem;">Michael T.</h4>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted);">"I joined Pro Gym 6 months ago, and the transformation has
+                            been unreal. The trainers push you to limits you didn't know existed. Lost 20lbs and gained
+                            so much confidence!"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-head">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100"
+                                alt="User 2" class="testimonial-img">
+                            <div>
+                                <h4 style="color: white; font-size: 1.2rem;">Jessica R.</h4>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted);">"The HIIT classes are incredible. The community feel here
+                            makes the hard work actually enjoyable. Never thought I'd look forward to waking up at 5 AM
+                            to lift weights."</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-head">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100"
+                                alt="User 3" class="testimonial-img">
+                            <div>
+                                <h4 style="color: white; font-size: 1.2rem;">David S.</h4>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted);">"State of the art equipment and the cleanest gym I've ever
+                            been to. The 24/7 access option matches my erratic work schedule perfectly. Truly a premium
+                            experience."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section reveal">
+        <div class="cta-content container">
+            <h2 class="heading-xl" style="margin-bottom: 2rem;">Start Your Fitness <span
+                    class="text-accent">Journey</span> Today</h2>
+            <a href="contact.html" class="btn btn-primary" style="font-size: 1.8rem; padding: 1.5rem 4rem;">Join the
+                Gym</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1rem; display:block;">PRO<span>GYM</span></a>
+                <p>Pushing limits and breaking boundaries. Join us and unleash your inner athlete.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="about.html">Trainers</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot" style="margin-right: 10px; color:var(--primary-color);"></i> 123
+                    Fitness Ave, Iron City</p>
+                <p><i class="fa-solid fa-phone" style="margin-right: 10px; color:var(--primary-color);"></i> +1 (555)
+                    123-4567</p>
+                <p><i class="fa-solid fa-envelope" style="margin-right: 10px; color:var(--primary-color);"></i>
+                    join@progym.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Pro Gym. All rights reserved. Designed for Fitness.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

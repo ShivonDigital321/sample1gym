@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Pro Gym</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" style="background: rgba(5,5,5,0.95); backdrop-filter: blur(10px);">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PRO<span>GYM</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="about.html" style="color:var(--primary-color);">Trainers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary d-none-mobile">Join Now</a>
+            <i class="fa-solid fa-bars mobile-toggle"></i>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header reveal">
+        <div class="container text-center">
+            <h1 class="heading-xl">About <span class="text-accent">Us</span></h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Discover what makes us the ultimate
+                destination for your fitness transformation.</p>
+        </div>
+    </header>
+
+    <!-- Gym Introduction & Mission/Vision -->
+    <section class="section-padding" style="background: var(--bg-dark);">
+        <div class="container about-section reveal">
+            <div class="about-content">
+                <h2 class="heading-lg">Our <span class="text-accent">Mission</span></h2>
+                <p>We believe fitness is not a hobby, but a way of life. We founded Pro Gym to create an environment
+                    where everyone—from beginners to elite athletes—can push their limits, build confidence, and
+                    discover what they are truly capable of.</p>
+                <br>
+                <h3 class="heading-md" style="color:white;">Vision Statement</h3>
+                <p>To be the premier fitness community in the country, setting the gold standard for personal
+                    transformation, athletic excellence, and unyielding support.</p>
+            </div>
+            <div class="about-img-box">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2070" alt="Weights"
+                    class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Gym Facilities (Image grid approach) -->
+    <section class="section-padding container reveal">
+        <div class="text-center mb-5">
+            <h2 class="heading-lg">Unmatched <span class="text-accent">Facilities</span></h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem;">Experience an environment
+                designed specifically for performance.</p>
+        </div>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div>
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070"
+                    style="width:100%; border-radius:10px; height:250px; object-fit:cover; filter: grayscale(100%); transition: filter 0.3s;"
+                    onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'"
+                    alt="Heavy Lifting Area">
+                <h3 style="margin-top:1rem; text-align:center;">Heavy Lifting Zones</h3>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=2069"
+                    style="width:100%; border-radius:10px; height:250px; object-fit:cover; filter: grayscale(100%); transition: filter 0.3s;"
+                    onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'"
+                    alt="Cardio Setup">
+                <h3 style="margin-top:1rem; text-align:center;">Cardio & Endurance</h3>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2070"
+                    style="width:100%; border-radius:10px; height:250px; object-fit:cover; filter: grayscale(100%); transition: filter 0.3s;"
+                    onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'"
+                    alt="Recovery Area">
+                <h3 style="margin-top:1rem; text-align:center;">Recovery Suites</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Trainers -->
+    <section class="section-padding reveal" style="background: var(--bg-card);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="heading-lg">Meet Our <span class="text-accent">Trainers</span></h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem;">The elite professionals
+                    guiding your transformation journey.</p>
+            </div>
+
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070" alt="Trainer 1"
+                        class="trainer-img">
+                    <div class="trainer-info">
+                        <h3>John <span class="text-accent">Doe</span></h3>
+                        <p class="specialization">Head Coach - Strength</p>
+                        <p class="exp">12 Years Experience</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?q=80&w=1964" alt="Trainer 2"
+                        class="trainer-img">
+                    <div class="trainer-info">
+                        <h3>Sarah <span class="text-accent">Connor</span></h3>
+                        <p class="specialization">HIIT & Conditioning</p>
+                        <p class="exp">8 Years Experience</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1974" alt="Trainer 3"
+                        class="trainer-img">
+                    <div class="trainer-info">
+                        <h3>Mike <span class="text-accent">Tyson</span></h3>
+                        <p class="specialization">Boxing & Bodybuilding</p>
+                        <p class="exp">15 Years Experience</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2070" alt="Trainer 4"
+                        class="trainer-img">
+                    <div class="trainer-info">
+                        <h3>Elena <span class="text-accent">Rose</span></h3>
+                        <p class="specialization">Yoga & Recovery</p>
+                        <p class="exp">10 Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1rem; display:block;">PRO<span>GYM</span></a>
+                <p>Pushing limits and breaking boundaries. Join us and unleash your inner athlete.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="about.html">Trainers</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot" style="margin-right: 10px; color:var(--primary-color);"></i> 123
+                    Fitness Ave, Iron City</p>
+                <p><i class="fa-solid fa-phone" style="margin-right: 10px; color:var(--primary-color);"></i> +1 (555)
+                    123-4567</p>
+                <p><i class="fa-solid fa-envelope" style="margin-right: 10px; color:var(--primary-color);"></i>
+                    join@progym.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Pro Gym. All rights reserved. Designed for Fitness.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

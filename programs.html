@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | Pro Gym</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <style>
+        .detailed-programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            padding: 4rem 0;
+        }
+
+        .program-card-detail {
+            background: var(--bg-card);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .program-card-detail:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 77, 0, 0.2);
+            border-color: rgba(255, 77, 0, 0.5);
+        }
+
+        .program-detail-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .program-detail-body {
+            padding: 2.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .program-detail-body h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .program-detail-body p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin-bottom: 2rem;
+            flex: 1;
+        }
+
+        .benefits-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .benefits-list li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" style="background: rgba(5,5,5,0.95); backdrop-filter: blur(10px);">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PRO<span>GYM</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html" style="color:var(--primary-color);">Programs</a></li>
+                <li><a href="about.html">Trainers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary d-none-mobile">Join Now</a>
+            <i class="fa-solid fa-bars mobile-toggle"></i>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header reveal"
+        style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80') center/cover;">
+        <div class="container text-center">
+            <h1 class="heading-xl">Our <span class="text-accent">Programs</span></h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Select from our elite programs curated to
+                push your limits.</p>
+        </div>
+    </header>
+
+    <!-- Programs Grid -->
+    <section class="section-padding container reveal">
+        <div class="detailed-programs-grid">
+
+            <!-- Program 1 -->
+            <div class="program-card-detail">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070"
+                    alt="Strength Training" class="program-detail-img">
+                <div class="program-detail-body">
+                    <h3>Strength Training</h3>
+                    <p>Designed for individuals aiming to build sheer power and functional strength utilizing advanced
+                        powerlifting and strongman concepts.</p>
+                    <ul class="benefits-list">
+                        <li>Increase muscle mass and density</li>
+                        <li>Enhance bone health</li>
+                        <li>Boost everyday functional strength</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline" style="text-align:center;">Join Now</a>
+                </div>
+            </div>
+
+            <!-- Program 2 -->
+            <div class="program-card-detail">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=2070" alt="Weight Loss"
+                    class="program-detail-img">
+                <div class="program-detail-body">
+                    <h3>Weight Loss</h3>
+                    <p>A comprehensive program combining cardiovascular training, diet tracking, and fat-loss focused
+                        conditioning.</p>
+                    <ul class="benefits-list">
+                        <li>Accelerated fat burning</li>
+                        <li>Improved cardiovascular health</li>
+                        <li>Expert nutritional guidance</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline" style="text-align:center;">Join Now</a>
+                </div>
+            </div>
+
+            <!-- Program 3 -->
+            <div class="program-card-detail">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069"
+                    alt="CrossFit Program" class="program-detail-img">
+                <div class="program-detail-body">
+                    <h3>CrossFit Program</h3>
+                    <p>The ultimate test of fitness. Incorporates high-intensity functional movements, gymnastics, and
+                        Olympic weightlifting.</p>
+                    <ul class="benefits-list">
+                        <li>Overall fitness improvement</li>
+                        <li>Highly engaging community</li>
+                        <li>Dynamic, changing daily workouts</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline" style="text-align:center;">Join Now</a>
+                </div>
+            </div>
+
+            <!-- Program 4 -->
+            <div class="program-card-detail">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070" alt="HIIT Training"
+                    class="program-detail-img">
+                <div class="program-detail-body">
+                    <h3>HIIT Training</h3>
+                    <p>Short, intense bursts of exercise followed by brief recovery periods intended to keep metabolic
+                        rate elevated.</p>
+                    <ul class="benefits-list">
+                        <li>Maximum calorie burn in minimal time</li>
+                        <li>Elevated metabolism post-workout</li>
+                        <li>Builds explosive power</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline" style="text-align:center;">Join Now</a>
+                </div>
+            </div>
+
+            <!-- Program 5 -->
+            <div class="program-card-detail">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070"
+                    alt="Personal Coaching" class="program-detail-img">
+                <div class="program-detail-body">
+                    <h3>Personal Coaching</h3>
+                    <p>Work one-on-one with elite trainers to fast-track your success with 100% customized programming.
+                    </p>
+                    <ul class="benefits-list">
+                        <li>Tailored exercise regimes</li>
+                        <li>Accountability and motivation</li>
+                        <li>Technique correction & injury prevention</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline" style="text-align:center;">Join Now</a>
+                </div>
+            </div>
+
+            <!-- Program 6 -->
+            <div class="program-card-detail">
+                <img src="https://images.unsplash.com/photo-1526506462719-755ccac25bba?q=80&w=2070" alt="Bodybuilding"
+                    class="program-detail-img">
+                <div class="program-detail-body">
+                    <h3>Bodybuilding Coaching</h3>
+                    <p>Hypertrophy-focused training splits specifically engineered for aesthetic enhancement and muscle
+                        sculpting.</p>
+                    <ul class="benefits-list">
+                        <li>Maximum muscle hypertrophy</li>
+                        <li>Enhance symmetry and proportions</li>
+                        <li>Stage preparation & posing guidance</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline" style="text-align:center;">Join Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section reveal" style="padding: 4rem 2rem;">
+        <div class="cta-content container text-center">
+            <h2 class="heading-lg" style="margin-bottom: 2rem;">Not sure where to <span
+                    class="text-accent">start</span>?</h2>
+            <p style="margin-bottom: 2rem;">Contact our front desk team to get a free assessment.</p>
+            <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1rem; display:block;">PRO<span>GYM</span></a>
+                <p>Pushing limits and breaking boundaries. Join us and unleash your inner athlete.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="about.html">Trainers</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot" style="margin-right: 10px; color:var(--primary-color);"></i> 123
+                    Fitness Ave, Iron City</p>
+                <p><i class="fa-solid fa-phone" style="margin-right: 10px; color:var(--primary-color);"></i> +1 (555)
+                    123-4567</p>
+                <p><i class="fa-solid fa-envelope" style="margin-right: 10px; color:var(--primary-color);"></i>
+                    join@progym.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Pro Gym. All rights reserved. Designed for Fitness.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
