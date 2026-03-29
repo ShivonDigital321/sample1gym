@@ -211,7 +211,7 @@ a {
     overflow: hidden;
 }
 
-#hero-canvas {
+.hero-bg-video {
     position: absolute;
     top: 0;
     left: 0;
